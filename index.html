@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uber’s Autonomous Future | MOR 530</title>
+<style>
+:root{--bg:#f5f6f2;--ink:#16332f;--muted:#61706b;--green:#087f68;--line:#d9e1da;--lime:#dcf397}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,sans-serif}a{color:inherit}header{background:var(--ink);color:white;padding:19px 6%;display:flex;align-items:center;justify-content:space-between;gap:20px}header strong{font-size:20px;letter-spacing:-1px}nav{display:flex;gap:23px;flex-wrap:wrap}nav a{text-decoration:none;font-size:13px;color:#d3e2db}main{max-width:1160px;margin:auto;padding:0 28px}section{padding:60px 0;border-bottom:1px solid var(--line);scroll-margin-top:20px}.eyebrow{text-transform:uppercase;font-size:11px;font-weight:800;letter-spacing:2px;color:var(--green)}.hero{padding:76px 0 50px}.hero h1{font-size:clamp(43px,6.8vw,78px);line-height:1.04;letter-spacing:-4px;max-width:900px;margin:20px 0 26px}.hero h1 span{color:var(--green)}.lead{font-size:20px;max-width:750px;color:var(--muted)}.pill{display:inline-block;font-size:11px;font-weight:750;padding:7px 12px;background:#e5eadf;border-radius:30px;margin:5px 5px 0 0}.button{display:inline-block;border:0;border-radius:8px;background:var(--ink);color:white;padding:13px 20px;text-decoration:none;font-weight:650;cursor:pointer;font-size:14px}.hero .button{margin-top:20px}.byline{font-size:12px;color:var(--muted);margin-top:23px}h2{font-size:34px;line-height:1.15;letter-spacing:-1.2px;margin:12px 0 17px}h3{font-size:19px;line-height:1.3;margin:13px 0}p{margin:9px 0 16px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:25px}.number{color:var(--green);font-weight:800;font-size:12px}.card p,.small{color:var(--muted);font-size:14px}.banner{padding:24px 28px;background:var(--ink);border-radius:14px;color:white;margin-top:24px}.banner p{margin:0}.banner strong{color:var(--lime)}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:25px 0 18px}.tab{border:1px solid var(--line);border-radius:30px;background:white;padding:10px 18px;cursor:pointer;color:var(--ink);font-weight:650}.tab[aria-selected=true]{background:var(--ink);color:white;border-color:var(--ink)}.stakeholder{background:white;padding:27px;border:1px solid var(--line);border-radius:16px;min-height:195px}.stakeholder h3{margin-top:0}.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}.lab{background:white;border:1px solid var(--line);border-radius:16px;padding:27px}.control{margin:18px 0}.control label{display:flex;justify-content:space-between;font-size:13px;gap:15px;font-weight:650}.control output{color:var(--green);white-space:nowrap}input[type=range]{width:100%;accent-color:var(--green);margin-top:12px}.result{background:#edf4e8;padding:20px;border-radius:12px;margin-top:21px}.big{font-size:37px;letter-spacing:-1.5px;font-weight:800;line-height:1.3}.result p{font-size:13px;margin:4px 0 0}.negative{color:#a84328}.positive{color:var(--green)}.track{height:10px;background:#e4e9e3;border-radius:6px;overflow:hidden;margin:17px 0 8px}.fill{height:100%;background:var(--green);transition:width .2s}.note{font-size:12px;color:var(--muted);margin-top:18px}.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:14px;background:white}table{border-collapse:collapse;width:100%;min-width:650px;text-align:left;font-size:13px}th{background:#eaf0e6;font-size:11px;letter-spacing:1px;text-transform:uppercase}td,th{padding:17px 20px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border:0}td:first-child{font-weight:750;width:19%}.gates{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:24px}.gate{padding:21px;background:white;border:1px solid var(--line);border-radius:13px}.gate b{font-size:14px}.gate p{font-size:13px;color:var(--muted);margin-bottom:0}.source{font-size:13px;color:var(--muted);margin:14px 0}.source a{color:var(--green)}footer{padding:30px 28px;max-width:1160px;margin:auto;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:20px}.print{background:white;border:1px solid var(--line);color:var(--ink);border-radius:7px;padding:9px 14px;cursor:pointer}
+@media(max-width:760px){.grid,.two{grid-template-columns:1fr}.gates{grid-template-columns:1fr 1fr}header{align-items:flex-start;flex-direction:column}nav{gap:17px}main{padding:0 20px}.hero{padding-top:48px}.hero h1{letter-spacing:-2px}section{padding:42px 0}.lead{font-size:18px}footer{flex-direction:column}}
+@media print{header nav,.tabs,.print,.hero .button{display:none}body{background:white}section{padding:24px 0;break-inside:avoid}.hero{padding-top:20px}.hero h1{font-size:45px}.card,.lab,.gate{break-inside:avoid}main{max-width:none}.stakeholder{min-height:0}}
+</style>
+</head>
+<body>
+<header>
+<strong>Uber / Future in motion</strong>
+<nav aria-label="Main navigation"><a href="#strategy">Strategy</a><a href="#people">People</a><a href="#lab">Scenario lab</a><a href="#metrics">Scorecard</a></nav>
+</header>
+<main>
+<section class="hero">
+<div class="eyebrow">MOR 530 · Interactive case submission</div>
+<h1>An electric future.<br>A <span>shared responsibility.</span></h1>
+<p class="lead">Uber should support human-driven EVs and selectively integrate driver-out autonomous fleets—expanding when safety, economics, and marketplace outcomes justify it.</p>
+<div><span class="pill">Case SI-187</span><span class="pill">Strategy + metrics</span><span class="pill">Illustrative scenario models</span></div>
+<a class="button" href="#lab">Explore the tradeoffs ↗</a>
+<div class="byline">Saloni Belliappa Bolakaranda · November 3, 2026<br>Independent class analysis · Demo website, not affiliated with Uber, Tesla, or Waymo</div>
+</section>
+
+<section id="strategy">
+<div class="eyebrow">01 / The recommendation</div>
+<h2>Three decisions. Different economic problems.</h2>
+<p class="small">Electrification and autonomy require separate investment tests.</p>
+<div class="grid">
+<article class="card"><span class="number">01 / SUPPORT</span><h3>Improve human-driver EV economics.</h3><p>Prioritize reliable charging, affordable rentals, and targeted adoption assistance. Assess earnings after all vehicle costs before promoting a switch.</p><span class="pill">Remove the binding constraint</span></article>
+<article class="card"><span class="number">02 / TEST</span><h3>Evaluate FSD separately.</h3><p>No blanket subsidy for Tesla FSD (Supervised). A voluntary pilot must demonstrate incremental benefits beyond EV savings and the subsidy itself.</p><span class="pill">Human supervision remains</span></article>
+<article class="card"><span class="number">03 / INTEGRATE</span><h3>Stage third-party L4 deployment.</h3><p>Partner within supported operating conditions. Start with verified service gaps, dependable charging, clear responsibilities, and access to performance data.</p><span class="pill">Expand through evidence gates</span></article>
+</div>
+<div class="banner"><p><strong>The essential distinction:</strong> FSD (Supervised) requires an attentive human driver. Driver-out Level 4 operates without an onboard driver within its supported conditions. They do not offer the same labor economics. [2, 3]</p></div>
+</section>
+
+<section id="evidence">
+<div class="eyebrow">02 / What the case establishes</div>
+<h2>Promising signals. Unanswered questions.</h2>
+<div class="grid">
+<article class="card"><span class="number">LONDON · CASE P. 5</span><h3>40% electric miles</h3><p>By end-2025, 40% of Uber’s London platform miles were electric. Coordinated incentives and charging accompanied adoption; the case does not isolate each intervention’s effect.</p></article>
+<article class="card"><span class="number">AUSTIN · CASE P. 18</span><h3>50% relative increase</h3><p>The CEO reports EV trip share rose 50% after the Waymo launch. Illustratively, a 10% share would become 15%. This is not a 50-percentage-point increase or proof of driver benefits.</p></article>
+<article class="card"><span class="number">UTILIZATION · CASE P. 18</span><h3>20 hours is an expectation</h3><p>Leadership describes AVs operating 20 hours daily and increasing industrial charging needs. Operating hours do not establish paid utilization, profitability, or displaced jobs.</p></article>
+</div>
+</section>
+
+<section id="people">
+<div class="eyebrow">03 / Who captures the value?</div>
+<h2>A growing platform can distribute gains unevenly.</h2>
+<div class="tabs" role="tablist" aria-label="Stakeholder perspectives">
+<button class="tab" id="tab-drivers" role="tab" aria-controls="stakeholder-panel" aria-selected="true" data-person="drivers">Human drivers</button>
+<button class="tab" id="tab-riders" role="tab" aria-controls="stakeholder-panel" aria-selected="false" data-person="riders">Riders</button>
+<button class="tab" id="tab-fleets" role="tab" aria-controls="stakeholder-panel" aria-selected="false" data-person="fleets">Fleet partners</button>
+<button class="tab" id="tab-uber" role="tab" aria-controls="stakeholder-panel" aria-selected="false" data-person="uber">Uber + cities</button>
+</div>
+<div class="stakeholder" id="stakeholder-panel" role="tabpanel" aria-labelledby="tab-drivers" tabindex="0"></div>
+<p class="note">These are stakeholder hypotheses to evaluate, not benefits or harms established by the Austin case evidence.</p>
+</section>
+
+<section id="lab">
+<div class="eyebrow">04 / Interactive scenario lab</div>
+<h2>Test the assumptions behind the recommendation.</h2>
+<p class="small">All dollar amounts and scenario settings below are illustrative, not case observations, partner terms, or forecasts. Calculations update as you move the sliders.</p>
+<div class="two">
+<div class="lab">
+<h3>Does higher utilization pay?</h3>
+<p class="small">Illustrative fleet economics after platform fees. Fixed cost must include capital and overhead; variable cost must include allocated empty travel, energy, maintenance, and support.</p>
+<div class="control"><label for="trips">Paid trips per day <output id="trips-v"></output></label><input id="trips" type="range" min="0" max="60" value="30" step="1"></div>
+<div class="control"><label for="fixed">Fixed cost per day <output id="fixed-v"></output></label><input id="fixed" type="range" min="50" max="350" value="150" step="10"></div>
+<div class="control"><label for="revenue">Revenue per trip, after platform fees <output id="revenue-v"></output></label><input id="revenue" type="range" min="5" max="20" value="10" step=".5"></div>
+<div class="control"><label for="variable">Variable cost per paid trip <output id="variable-v"></output></label><input id="variable" type="range" min="1" max="12" value="4" step=".5"></div>
+<div class="result" aria-live="polite"><div class="small">Daily fleet operating result</div><div id="profit" class="big"></div><p id="breakeven"></p></div>
+<p class="note">Daily result = paid trips × (net revenue per trip − variable cost per trip) − fixed daily cost. This is a fleet calculation; Uber’s own margin needs a separate test.</p>
+</div>
+<div class="lab">
+<h3>Will human-driver trips hold up?</h3>
+<p class="small">Normalize starting human-driven trip demand to 100. Compare demand growth with the share of total trips served by autonomous vehicles.</p>
+<div class="control"><label for="growth">Total demand growth <output id="growth-v"></output></label><input id="growth" type="range" min="-20" max="80" value="10" step="1"></div>
+<div class="control"><label for="share">AV share of total trips <output id="share-v"></output></label><input id="share" type="range" min="0" max="80" value="20" step="1"></div>
+<div class="result" aria-live="polite"><div class="small">Human-driven trips versus baseline</div><div id="human-change" class="big"></div><div class="track"><div class="fill" id="human-bar"></div></div><p id="human-detail"></p><p id="needed-growth"></p></div>
+<p class="note">Human-trip index = 100 × (1 + demand growth) × (1 − AV share). The bar uses a fixed 0–200 index scale; baseline is 100. Preserving trip count does not preserve earnings, trip quality, or every driver’s access to work.</p>
+<div class="banner"><p><strong>Implication:</strong> With a 20% AV share, demand must grow 25% just to preserve total human-driven trip volume.</p></div>
+</div>
+</div>
+<button class="print" id="reset" style="margin-top:18px">Reset scenarios</button>
+</section>
+
+<section id="metrics">
+<div class="eyebrow">05 / The decision scorecard</div>
+<h2>Measure outcomes, not technology adoption alone.</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>Priority</th><th>What to track</th><th>Who benefits / decision use</th></tr></thead>
+<tbody>
+<tr><td>Safety</td><td>Serious injuries and collisions per million total miles; severity, operating conditions, uncertainty; critical events and remote assistance separately.</td><td>Riders, drivers, other road users. Safety authorization and evidence are mandatory gates.</td></tr>
+<tr><td>Driver livelihoods</td><td>Median and bottom-quartile net earnings per online hour, after all expenses; with and without incentives; unpaid waiting and exits.</td><td>Human drivers. Segment by geography, shift, and financing exposure to reveal concentrated losses.</td></tr>
+<tr><td>Rider service</td><td>90th-percentile pickup time, unfulfilled requests, cancellations, repeat use, and accessibility fulfillment.</td><td>Riders. Establish whether new supply fills actual service gaps.</td></tr>
+<tr><td>Uber economics</td><td>Incremental contribution after partner payments, incentives, support, and transition costs; separate launch costs.</td><td>Uber. Distinguish new demand from substitution and evaluate sustainable margin.</td></tr>
+<tr><td>Fleet viability</td><td>Fully loaded cost per paid mile; paid / total miles; charging downtime and queues; return on invested capital.</td><td>Fleet partners. More available hours must translate into viable paid utilization.</td></tr>
+<tr><td>Environmental impact</td><td>Lifecycle emissions per passenger-mile including empty travel and electricity mix; total emissions, miles, and EV trip share.</td><td>Communities. Check whether lower emissions intensity also delivers meaningful overall progress.</td></tr>
+</tbody>
+</table></div>
+</section>
+
+<section>
+<div class="eyebrow">06 / Rollout discipline</div>
+<h2>Earn the next stage of expansion.</h2>
+<p class="small">Proposed evaluation design: four-week baseline, then an initial 12-week pilot with comparable control areas. Account for seasonal demand, spillovers, and driver exits. This window cannot establish rare-event safety on its own.</p>
+<div class="gates">
+<div class="gate"><b>01 · Safety</b><p>Required authorization, reviewed operating evidence, and resolved critical hazards. No-crash pilot results alone are insufficient.</p></div>
+<div class="gate"><b>02 · Value</b><p>Positive recurring Uber contribution, credible fleet returns, and fewer unfulfilled requests without worse pickup performance.</p></div>
+<div class="gate"><b>03 · Driver impact</b><p>Pause additions if estimated pilot-related median or bottom-quartile net hourly earnings fall more than 5% versus controls for four weeks.</p></div>
+<div class="gate"><b>04 · Environment</b><p>Lower emissions per passenger-mile against comparable human-driven EV service; disclose total emissions and vehicle miles.</p></div>
+</div>
+<p class="note">Pilot windows and the 5% earnings trigger are proposed management choices, not case findings or scientific thresholds. Investigate uncertainty before attributing losses; use verified losses to guide time-limited support and rollout changes.</p>
+</section>
+
+<section id="sources">
+<div class="eyebrow">07 / Evidence, limits, and judgment</div>
+<h2>Keep the recommendation conditional.</h2>
+<p>Expand targeted FSD support only if incremental benefits exceed its cost under active supervision. Slow L4 additions when safety, charging, economics, or driver-impact evidence fails the gates. Electric trip growth alone should not override those findings.</p>
+<p class="small">Unknowns include Austin partner pricing, fully loaded AV costs, causal demand growth, FSD-specific benefits, and driver earnings effects. The case cannot determine optimal AV fleet size.</p>
+<div class="source"><b>[1]</b> Kier, Conn, Hooper, and Leape. <i>Uber: Electrifying a Global Marketplace.</i> Stanford GSB, SI-187, February 27, 2026. User-supplied case, pp. 4–6, 17–18. <a href="https://www.gsb.stanford.edu/faculty-research/publications/uber-electrifying-global-marketplace" target="_blank" rel="noopener noreferrer">Publisher reference ↗</a></div>
+<div class="source"><b>[2]</b> <a href="https://www.tesla.com/support/fsd" target="_blank" rel="noopener noreferrer">Tesla: Full Self-Driving (Supervised) ↗</a>. Used for the active-supervision distinction; manufacturer collision comparisons are not treated as causal evidence.</div>
+<div class="source"><b>[3]</b> MOR 530 workshop prompt supplied in this conversation. L4 scope follows the assignment’s definition of driver-out operation within supported conditions.</div>
+<div class="source"><b>[4]</b> User-supplied <i>Uber_Case_Solutions.pptx</i>, discussion draft. Economic questions informed this analysis; displayed scenario settings are illustrative.</div>
+<p class="note">Prepared with AI assistance for class discussion. This demo provides scenario calculations, not live operational data or an empirical safety evaluation.</p>
+<button class="print" onclick="window.print()">Print / save as PDF</button>
+</section>
+</main>
+<footer><span>Saloni Belliappa Bolakaranda · MOR 530</span><span>Electric. Autonomous. Accountable.</span></footer>
+<script>
+const perspectives={
+drivers:{title:"Better EV economics, but exposure to displacement.",gain:"Charging discounts and affordable vehicles could improve take-home earnings.",risk:"AV supply may reduce trip access or leave less attractive routes to humans. Drivers with debt and concentrated exposure may lose most.",check:"Track net earnings per online hour, unpaid time, exits, and the distribution of losses—not just a citywide average."},
+riders:{title:"More availability only matters if service works.",gain:"Additional supply could reduce waits and unfulfilled requests.",risk:"Limited operating areas, accessibility gaps, reliability issues, or higher prices could restrict benefits.",check:"Track pickup-time tails, completion, accessibility fulfillment, fares on comparable trips, and repeat use."},
+fleets:{title:"Available hours must become paid miles.",gain:"High paid utilization could spread vehicle costs across more trips.",risk:"Depreciation, empty travel, charging, maintenance, insurance, and support can erase that advantage.",check:"Track fully loaded cost per paid mile, charging downtime, return on capital, and paid miles as a share of all miles."},
+uber:{title:"Growth needs durable economics and public trust.",gain:"Electric AV partnerships could improve availability and support electrification.",risk:"Dependence on partners, concentrated driver losses, empty travel, and charging congestion may weaken the marketplace.",check:"Track incremental contribution, created versus substituted demand, total emissions, vehicle miles, and driver outcomes."}
+};
+function showPerson(key){
+const x=perspectives[key];
+document.getElementById("stakeholder-panel").innerHTML="<h3>"+x.title+"</h3><p><b>Potential gain:</b> "+x.gain+"</p><p><b>Potential harm:</b> "+x.risk+"</p><p><b>What to check:</b> "+x.check+"</p>";
+document.getElementById("stakeholder-panel").setAttribute("aria-labelledby","tab-"+key);
+document.querySelectorAll(".tab").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.person===key)));
+}
+document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>showPerson(b.dataset.person)));
+const ids=["trips","fixed","revenue","variable","growth","share"];
+const money=n=>new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",maximumFractionDigits:1}).format(n);
+function update(){
+const v=Object.fromEntries(ids.map(id=>[id,Number(document.getElementById(id).value)]));
+ids.forEach(id=>document.getElementById(id+"-v").textContent=["fixed","revenue","variable"].includes(id)?money(v[id]):v[id]+(["growth","share"].includes(id)?"%":""));
+const margin=v.revenue-v.variable, profit=v.trips*margin-v.fixed;
+const pe=document.getElementById("profit");pe.textContent=(profit>0?"+":"")+money(profit)+"/day";pe.className="big "+(profit<0?"negative":"positive");
+document.getElementById("breakeven").textContent=margin>0?"Break-even: "+Math.ceil(v.fixed/margin)+" whole paid trips per day.":"No finite break-even: each trip contributes zero or less before fixed costs.";
+const index=100*(1+v.growth/100)*(1-v.share/100), change=index-100;
+const he=document.getElementById("human-change");he.textContent=(change>0?"+":"")+change.toFixed(1)+"%";he.className="big "+(change<0?"negative":"positive");
+document.getElementById("human-detail").textContent="Human-trip index: "+index.toFixed(1)+" (baseline = 100).";
+document.getElementById("needed-growth").textContent="Demand growth needed to preserve baseline volume: "+(100*(1/(1-v.share/100)-1)).toFixed(1)+"%.";
+document.getElementById("human-bar").style.width=Math.max(0,Math.min(100,index/2))+"%";
+}
+ids.forEach(id=>document.getElementById(id).addEventListener("input",update));
+document.getElementById("reset").addEventListener("click",()=>{const defaults=[30,150,10,4,10,20];ids.forEach((id,i)=>document.getElementById(id).value=defaults[i]);update()});
+showPerson("drivers");update();
+</script>
+</body>
+</html>
